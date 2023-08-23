@@ -9,7 +9,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            overflow-x: auto;
+            overflow-x: hidden;
             height: 100vh;
             margin: 10px;
         }
@@ -27,8 +27,8 @@
     <center>
     <div id="login-form">
         <h2>Login</h2>
-        <input type="password" id="password" placeholder="Enter password" style="padding: 10px; background-color: orange;">
-        <button onclick="checkPassword()" style="padding: 10px;">Submit</button>
+        <input type="password" id="password" placeholder="Enter password" style="padding: 10px;">
+        <button onclick="checkPassword()" style="padding: 10px; background-color: orange;">Submit</button>
     </div>
     <div id="content" style="display: none;">
         <h1>You have got it!</h1>

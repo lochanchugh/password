@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Protected Page</title>
+</head>
+<body>
+    <div id="login-form">
+        <h2>Login</h2>
+        <input type="password" id="password" placeholder="Enter password">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+    <div id="content" style="display: none;">
+        <h1>Welcome to the Protected Page!</h1>
+        <p>This is the content that is only accessible after entering the correct password.</p>
+    </div>
+
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            if (password === "divya123") {
+                document.getElementById("login-form").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>
